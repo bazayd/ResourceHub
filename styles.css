@@ -1,0 +1,119 @@
+body {
+    background-color: #5D5D81;
+    font-family: 'Nunito', sans-serif;;
+}
+
+main {
+
+}
+
+footer {
+    height:100px;
+    background-color: #000505;
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+}
+
+footer p {
+    color: #FEFCFD;
+    text-align: center;
+}
+
+
+a {
+    
+}
+
+                              
+.navbar {
+    padding: 25px;
+    margin: 10px;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.missionStatement {
+    padding: 150px 100px;
+    margin: 50px;
+    background-image: url("studentIMG.jpeg");
+    background-size: cover;
+}
+
+.missionStatement h1, p{
+    align-items: end;
+    color: #FEFCFD;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#transportation,
+#financial-aid,
+#textbooks {
+
+    padding: 30px 50px;
+    margin: 50px;
+    border: 10px solid #000505;
+}
+
+#transportation h2{
+    text-align: end;
+    color: #000505;
+    font-size: 30px;
+}
+
+#transportation
+ p {
+    text-align: start;
+    color: #FEFCFD;
+}
+
+#financial-aid h2 {
+    text-align: start;
+    color: #000505;
+    font-size: 30px;
+}
+
+#financial-aid p {
+    text-align: end;
+    color: #FEFCFD;
+}
+
+#textbooks h2 {
+    text-align: end;
+    color: #000505;
+    font-size: 30px
+}
+
+#texbooks p {
+    text-align: start;
+    color: #FEFCFD;
+}
+
+
+.container {
+    display: flex;
+    column-gap: 30px;
+    background-color: #BFCDE0;
+}
+
+.container ul {
+    list-style: none;
+    text-align: center;
+    background-position: 100%;
+
+}
