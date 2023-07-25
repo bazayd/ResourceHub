@@ -8,7 +8,6 @@ main {
 }
 
 footer {
-    height:100px;
     background-color: #000505;
     position: relative;
     display: block;
@@ -63,7 +62,8 @@ a {
 
 #transportation,
 #financial-aid,
-#textbooks {
+#textbooks,
+#finances {
 
     padding: 30px 50px;
     margin: 50px;
@@ -82,7 +82,8 @@ a {
     color: #FEFCFD;
 }
 
-#financial-aid h2 {
+#financial-aid,
+ h2 {
     text-align: start;
     color: #000505;
     font-size: 30px;
@@ -99,11 +100,25 @@ a {
     font-size: 30px
 }
 
-#texbooks p {
+#textbooks p {
     text-align: start;
     color: #FEFCFD;
 }
 
+#finances h2{
+    text-align: start;
+    color: #000505;
+    font-size: 30px;
+}
+
+#finances p {
+    text-align: end;
+    color: #FEFCFD;
+}
+
+#financeButton {
+    
+}
 
 .container {
     display: flex;

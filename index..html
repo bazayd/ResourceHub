@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <script rel="script" href="main.js"></script>
+    <script href="main.js"></script>
     <title>Resource Hub</title>
 </head>
 <body>
     <nav class="navbar">
         <ul>
             <li>Home</li>
-            <li><a href="about.html"><span>About Us</span></a></li>
+            <li><a href="about.html" target="_blank"><span>About Us</span></a></li>
             <li><a href="#contact">Contact Info</a></li>
         </ul>
     </nav>
@@ -59,6 +60,15 @@
                 <figcaption id="textbook-caption"></figcaption>
             </article>
         </section>
+        
+        <section id="finances">
+            <article>
+                <h2>Finances</h2>
+                <p>Lorem ipsum</p>
+                <button type="button" id="financeButton" onclick="fun()">Monthly 50/20/30 Calculator</button>
+                <img />
+            </article>
+        </section>
     </main>
     <div class="container">
         <div class="next">
@@ -69,7 +79,7 @@
             </ul>
         </div>
 
-        <div class="contact">  
+        <div id="contact">  
             <ul class="contact-info">
                 <lh>Contact Us!</lh>
                 <li><i class="fa fa-envelope"></i> brandonzayd02@gmail.com</li>
@@ -79,6 +89,6 @@
     </div>
     <footer>
         <p>Privacy Policy</p>
-        <p>2023 All rights Reserved</p>
+        <p>Copyright © 2023 All Rights Reserved</p>
     </footer>
 </body>
