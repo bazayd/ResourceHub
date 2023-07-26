@@ -1,29 +1,36 @@
 body {
     background-color: #5D5D81;
-    font-family: 'Nunito', sans-serif;;
-}
-
-main {
-
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
     background-color: #000505;
     position: relative;
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr auto;
     padding: 10px 20px;
+    flex-grow: 1;
 }
 
 footer p {
     color: #FEFCFD;
-    text-align: center;
 }
-
 
 a {
-    
+    color:#000505
 }
 
+
+a:visited {
+    color:#000505;   
+}
+
+a:hover {
+    color:#BFCDE0
+}
                               
 .navbar {
     padding: 25px;
@@ -130,5 +137,17 @@ a {
     list-style: none;
     text-align: center;
     background-position: 100%;
+}
 
+
+.ourMission {
+    padding: 150px 100px;
+    margin: 50px;
+    background-image: url("studentsuccess.png");
+    background-size: cover;
+}
+
+.ourMission h2, p{
+    text-align: center;
+    color:#000505;
 }
