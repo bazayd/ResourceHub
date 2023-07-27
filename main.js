@@ -1,3 +1,19 @@
-document.getElementById("financeButton").onclick = function openCalc() {
-    window.open("https://stackoverflow.com/questions/6303964/javascript-open-a-given-url-in-a-new-tab-by-clicking-a-button", "_blank");
+let submitButton = document.getElementById('submit');
+submitButton.addEventListener('click', calculate);
+
+
+function calculate() {
+    let monthlySalary = parseInt(document.getElementById('monthly').value)
+    // console.log(typeof(monthlySalary))
+    // let monthylSalaryString = monthlySalary.toLocaleString();
+
+    let necessities = monthlySalary * 0.5;
+    let wants = monthlySalary * 0.3;
+    let savings = monthlySalary * 0.2;
+
+
+    alert ("Necessities: $" + necessities.toLocaleString() + "\nWants: $" + wants.toLocaleString() + "\n Savings: $" + savings.toLocaleString());
+
+
 }
+

@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <script rel="script" href="main.js"></script>
-        <script href="main.js"></script>
+        <script src="main.js"></script>
         <title>50/30/20 Calculator</title>
     </head>
     <body>
@@ -14,7 +14,14 @@
             <h1>50/30/20 Calculator</h1>
             
             <div class="calculator">
-                
+                <h3>Find out how to budget using the 50/30/20 Rule</h2>
+                <div id="monthlySalary">
+                    <form name="calcForm" action="" method="GET">
+                        <label for="monthly">Enter Monthly after-tax salary</label><br>
+                        <input type="text" id="monthly" name="monthly" value=""><br>
+                        <input type="submit" id="submit" name="submit" value="Submit" onclick="calculate(this.calcForm)"><br>
+                    </form>
+                </div>
             </div>
         </main>
     </body>

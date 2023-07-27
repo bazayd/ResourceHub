@@ -15,6 +15,15 @@ footer {
     flex-grow: 1;
 }
 
+form {
+    padding: 30px 20px;
+    display: flex;
+
+}
+
+
+
+
 footer p {
     color: #FEFCFD;
 }
@@ -54,7 +63,7 @@ a:hover {
 .missionStatement {
     padding: 150px 100px;
     margin: 50px;
-    background-image: url("studentIMG.jpeg");
+    background-image: url("Images/studentIMG.jpeg");
     background-size: cover;
 }
 
@@ -143,7 +152,7 @@ a:hover {
 .ourMission {
     padding: 150px 100px;
     margin: 50px;
-    background-image: url("studentsuccess.png");
+    background-image: url("Images/studentsuccess.png");
     background-size: cover;
 }
 
