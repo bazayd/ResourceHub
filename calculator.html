@@ -19,7 +19,7 @@
                     <form name="calcForm" action="" method="GET">
                         <label for="monthly">Enter Monthly after-tax salary</label><br>
                         <input type="text" id="monthly" name="monthly" value=""><br>
-                        <input onClick="calculate(); return false;" type="submit" id="submit" name="submit" value="Submit" onclick="calculate(this.calcForm)"><br>
+                        <input type="submit" id="submit" name="submit" value="Submit" onclick="calculate(this.calcForm); return false;"><br>
                         <p id="necessitiesText" >Necessities : $0</p>
                         <p id="wantsText">Wants: $0</p>
                         <p id="savingsText">Savings: $0</p>
