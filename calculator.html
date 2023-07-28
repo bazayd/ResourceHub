@@ -11,13 +11,13 @@
     </head>
     <body>
         <main>
-            <h1>50/30/20 Calculator</h1>
+            <h1 id="calculatorHeading">50/30/20 Calculator</h1>
             
             <div class="calculator">
                 <h3>Find out how to budget using the 50/30/20 Rule</h2>
                 <div id="monthlySalary">
-                    <form name="calcForm" action="" method="GET">
-                        <label for="monthly">Enter Monthly after-tax salary</label><br>
+                    <form id="form" name="calcForm" action="" method="GET">
+                        <label id="calcLabel" for="monthly">Enter Monthly after-tax salary</label><br>
                         <input type="text" id="monthly" name="monthly" value=""><br>
                         <input type="submit" id="submit" name="submit" value="Submit" onclick="calculate(this.calcForm); return false;"><br>
                         <p id="necessitiesText" >Necessities : $0</p>
@@ -26,6 +26,10 @@
                     </form>
                 </div>
             </div>
+             <footer>
+                <p>Privacy Policy</p>
+                <p>Copyright © 2023 All Rights Reserved</p>
+            </footer>
         </main>
     </body>
 </html>

@@ -1,5 +1,7 @@
 body {
     background-color: #5D5D81;
+
+
     font-family: 'Nunito', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -7,7 +9,7 @@ body {
 }
 
 footer {
-    background-color: #000505;
+    background-color: #505082;
     position: relative;
     display: grid;
     grid-template-rows: 1fr auto;
@@ -75,15 +77,18 @@ a:hover {
     padding: 10px 20px;
 }
 
-#transportation,
-#financial-aid,
-#textbooks,
-#finances {
-
+#transportation, #financial-aid, #textbooks,#finances {
+    border: outset;
     padding: 30px 50px;
     margin: 50px;
-    border: 10px solid #000505;
+    background-color: #FEFCFD;
 }
+
+#financial-aid {
+    border: outset;
+}
+
+
 
 #transportation h2{
     text-align: end;
@@ -94,7 +99,7 @@ a:hover {
 #transportation
  p {
     text-align: start;
-    color: #FEFCFD;
+    color: #000505;
 }
 
 #financial-aid,
@@ -106,7 +111,7 @@ a:hover {
 
 #financial-aid p {
     text-align: end;
-    color: #FEFCFD;
+    color: #000505;
 }
 
 #textbooks h2 {
@@ -117,7 +122,7 @@ a:hover {
 
 #textbooks p {
     text-align: start;
-    color: #FEFCFD;
+    color: #000505;
 }
 
 #finances h2{
@@ -128,12 +133,45 @@ a:hover {
 
 #finances p {
     text-align: end;
-    color: #FEFCFD;
+    color: #000505;
 }
 
-#financeButton {
-    
+#financeCalc {
+    background-color: #505082;
+    color: #FEFCFD;
+    border-style: outset;
+    text-shadow: none;
+    text-decoration: none;
 }
+
+#financeCalc:hover {
+    background-color: #BFCDE0;
+}
+
+#calculatorHeading {
+    text-align: center;
+}
+
+#form {
+    text-align: center;
+    margin: 20px 30px;
+}
+
+
+#monthly {
+    padding: 10px 10px;
+    margin: 20px 30px;
+    text-shadow: none;
+}
+
+#submit {
+    color:#FEFCFD;
+    background-color: #5D5D81;
+    border-style: solid;
+}
+
+
+
 
 .container {
     display: flex;
@@ -158,4 +196,15 @@ a:hover {
 .ourMission h2, p{
     text-align: center;
     color:#000505;
+}
+
+.calculator {
+    border: outset #BFCDE0;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 40px 40px
+}
+
+.calculator h3 {
+    text-align: center;
 }
