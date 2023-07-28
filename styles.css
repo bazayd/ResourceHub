@@ -39,7 +39,7 @@ a:visited {
 }
 
 a:hover {
-    color:#BFCDE0
+    color:#505082;
 }
                               
 .navbar {
@@ -59,6 +59,16 @@ a:hover {
 
 .navbar a {
     text-decoration: none;
+}
+
+.navbar a:hover {
+    opacity: 0.5;
+    color:#BFCDE0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .missionStatement {
@@ -147,9 +157,12 @@ a:hover {
 #financeCalc:hover {
     background-color: #BFCDE0;
     opacity: 0.6;
-    transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
+    color:#505082;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 #calculatorHeading {
@@ -174,13 +187,25 @@ a:hover {
     border-style: solid;
 }
 
+#submit:hover {
+    opacity: 0.6;
+    color:#BFCDE0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
 #backToIndex:hover {
+    opacity: 0.6;
     text-decoration: none;
     color: #FEFCFD;
-    opacity: 0.6;
-    transition: opacity 0.2s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 
