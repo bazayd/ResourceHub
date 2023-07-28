@@ -68,7 +68,7 @@ a:hover {
     background-size: cover;
 }
 
-.missionStatement h1, p{
+.missionStatement h1, .missionStatement p{
     align-items: end;
     color: #FEFCFD;
     text-align: center;
@@ -146,6 +146,10 @@ a:hover {
 
 #financeCalc:hover {
     background-color: #BFCDE0;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
 }
 
 #calculatorHeading {
@@ -168,6 +172,15 @@ a:hover {
     color:#FEFCFD;
     background-color: #5D5D81;
     border-style: solid;
+}
+
+#backToIndex:hover {
+    text-decoration: none;
+    color: #FEFCFD;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
 }
 
 
@@ -208,3 +221,4 @@ a:hover {
 .calculator h3 {
     text-align: center;
 }
+
