@@ -1,25 +1,32 @@
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if(
-        !empty($_POST['name'])
-        && !empty($_POST['email'])
-        && !empty($_POST['message'])
-    ){
-        $name = $_POST["name"];
-        $email = $_POST["email"];
-        $phone = $_POST["phone"];
-        $message = $_POST["message"];
+<?php
 
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
 
-        $to = "your@email.com";
-        $subject = "New Contact Form Submission";
-        $body = "Name: {$name}\nEmail: {$email}\nPhone: {$phone}\nMessage: {$message}";
-        $headers = "From: {$email}";
+require "vendor/autoload.php";
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 
-        if (mail($to, $subject, $body, $headers)) {
-            echo "Message sent successfully!";
-        } else {
-            echo "Failed to send message.";
-        }
-    }
-}
+$mail = new PHPMailer(true);
+
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+
+$mail->Host = "smtp.gmail.com";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
+
+$mail->Username = "brandonzayd02@gmail.com";
+$mail->Password = "sanjose33_";
+
+$mail->setFrom($email, $name);
+$mail->addAddress("brandonzarriaga@gmail.com", "Brandon Arriaga");
+
+$mail->Subject = "New Contact Form Message";
+$mail->Body = $message;
+
+$mail->send();
+
+echo "email sent";

@@ -25,3 +25,8 @@ function calculate() {
 
 submitButton.addEventListener('click', calculate);
 
+// Contact Form
+
+function sendEmail() {
+    
+}

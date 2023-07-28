@@ -9,13 +9,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <script rel="script" href="main.js"></script>
-        <script href="main.js"></script>
+        <script src="main.js"></script>
+
         <title>Contact Form</title>
     </head>
     <body>
-        <h1>Contact Form</h1>
-        <div class="">
 
+        <div class="contactForm">
+
+            <form id="contact-form" action="sendmail.php" method="post">
+                <h1>Contact Form</h1>
+                    <label for="name" id="nameLabel">Name: </label>
+                    <input type="text" id="name" name="name" value="" required>
+
+
+                    <label for="email" id="emailLabel">Email: </label>
+                    <input type="text" id="email" name="email" value="" required>
+              
+
+                    <label for="message" id="messageLabel">Message: </label>
+                    <textarea id="message" name="message" value="" cols="30" row="10" placeholder="Your Message goes here. "></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </body>
 </html>
