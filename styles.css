@@ -1,27 +1,37 @@
-body {
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+html, body {
     background-color: #5D5D81;
-
-
     font-family: 'Nunito', sans-serif;
-    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
 }
 
-footer {
+header {
+    text-align: center;
+    background-color: #000505;
+    color: #FEFCFD;
+    padding: 50px;
+}
+
+#footer {
     background-color: #505082;
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    padding: 10px 20px;
-    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
 }
 
-form {
+main {
+    width: 90vw;
+    margin: 0 auto;
     padding: 30px 20px;
-
+    min-height: calc(100vh - 143px - 84px);
 }
-
 
 
 
@@ -233,10 +243,12 @@ a:hover {
 
 
 .ourMission {
+
     padding: 150px 100px;
     margin: 50px;
-    background-image: url("Images/studentsuccess.png");
+    background-image: url("Images/randomstudentupdate.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .ourMission h2, p{
