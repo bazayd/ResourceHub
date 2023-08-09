@@ -7,12 +7,11 @@
 html, body {
     background-color: #5D5D81;
     font-family: 'Nunito', sans-serif;
-
     display: flex;
     flex-direction: column;
 }
 
-header {
+#aboutHeader {
     text-align: center;
     background-color: #000505;
     color: #FEFCFD;
@@ -88,7 +87,7 @@ a:hover {
     background-size: cover;
 }
 
-.missionStatement h1, .missionStatement p{
+.missionStatement p, .missionStatement h1{
     align-items: end;
     color: #FEFCFD;
     text-align: center;
@@ -97,15 +96,12 @@ a:hover {
     padding: 10px 20px;
 }
 
+
 #transportation, #financial-aid, #textbooks,#finances {
     border: outset;
     padding: 30px 50px;
     margin: 50px;
     background-color: #FEFCFD;
-}
-
-#financial-aid {
-    border: outset;
 }
 
 
@@ -114,6 +110,7 @@ a:hover {
     text-align: end;
     color: #000505;
     font-size: 30px;
+    margin: 10px 10px;
 }
 
 #transportation
@@ -122,17 +119,6 @@ a:hover {
     color: #000505;
 }
 
-#financial-aid,
- h2 {
-    text-align: start;
-    color: #000505;
-    font-size: 30px;
-}
-
-#financial-aid p {
-    text-align: end;
-    color: #000505;
-}
 
 #textbooks h2 {
     text-align: end;
@@ -143,6 +129,7 @@ a:hover {
 #textbooks p {
     text-align: start;
     color: #000505;
+    margin: 10px 10px
 }
 
 #finances h2{
@@ -154,6 +141,7 @@ a:hover {
 #finances p {
     text-align: end;
     color: #000505;
+    margin: 20px 20px
 }
 
 #financeCalc {
@@ -195,6 +183,7 @@ a:hover {
     color:#FEFCFD;
     background-color: #5D5D81;
     border-style: solid;
+    margin: 20px 30px
 }
 
 #submit:hover {
@@ -218,6 +207,20 @@ a:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
+#aboutToIndex {
+    color: #FEFCFD;
+}
+
+#aboutToIndex:hover {
+    opacity: 0.6;
+    color:#BFCDE0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
 #contact-form {
     background-color: #FEFCFD;
     display: flex;
@@ -228,9 +231,21 @@ a:hover {
     border-radius: 10px;
 }
 
+#necessitiesText {
+    margin: 10px 20px;
+}
+
+#wantsText {
+    margin: 10px 20px
+}
+
+#savingsText {
+    margin: 10px 20px;
+}
 
 .container {
     display: flex;
+    justify-content: center;
     column-gap: 30px;
     background-color: #BFCDE0;
 }
@@ -240,6 +255,7 @@ a:hover {
     text-align: center;
     background-position: 100%;
 }
+
 
 
 .ourMission {
