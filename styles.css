@@ -13,9 +13,16 @@ html, body {
 
 #aboutHeader {
     text-align: center;
-    background-color: #000505;
+
     color: #FEFCFD;
     padding: 50px;
+}
+
+#calculatorHeading {
+    text-align: center;
+    color: #FEFCFD;
+    padding: 50px;
+    margin-bottom: 30px;
 }
 
 #footer {
@@ -86,15 +93,16 @@ a:hover {
     background-image: url("Images/studentIMG.jpeg");
     background-position: center;
     background-size: cover;
+    border-radius: 8px;
 }
 
 #missionStatement p, #missionStatement h1{
     align-items: end;
-    color: #ffffff;
+    color: #FEFCFD;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
-    font-weight: 500;
+
     padding: 10px 20px;
 }
 
@@ -209,7 +217,8 @@ a:hover {
     color:#FEFCFD;
     background-color: #5D5D81;
     border-style: solid;
-    margin: 20px 30px
+    margin: 20px 30px;
+    padding: 10px 10px
 }
 
 #submit:hover {
@@ -222,6 +231,7 @@ a:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
+
 #backToIndex:hover {
     opacity: 0.6;
     text-decoration: none;
@@ -233,9 +243,7 @@ a:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
-#aboutToTop {
-    background-color: #000505;
-}
+
 
 #aboutToIndex {
     color: #FEFCFD;
@@ -296,17 +304,19 @@ a:hover {
 
 
 .ourMission {
-
     padding: 150px 100px;
     margin: 50px;
-    background-image: url("Images/randomstudentupdate.jpg");
+    background-image: url("Images/studentjourney.webp");
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .ourMission h2, p{
     text-align: center;
     color:#000505;
+    margin: 20px 30px;
+    padding: 20px 20px';
 }
 
 .calculator {
@@ -314,6 +324,13 @@ a:hover {
     border-radius: 10px;
     padding: 20px 20px;
     margin: 40px 40px
+
+}
+
+
+.calculator label {
+    font-size: large;
+    font-weight: bold;
 }
 
 
