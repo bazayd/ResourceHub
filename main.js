@@ -27,6 +27,25 @@ submitButton.addEventListener('click', calculate);
 
 // Contact Form
 
-function sendEmail() {
-    
+let i = 0;
+let images = [];
+let slideShowSec = 3000;
+
+images[0] = 'Images/connect-student-success.jpg';
+images[1] = 'Images/studentjourney.webp';
+images[2] = 'Images/connect-student-success.jpg';
+
+function pictureSlide() {
+    document.getElementById("missionStatement").style.backgroundImage = "url(" + images[i] + ")";
+
+
+    if (i < images.length -1) {
+        i++
+    } else {
+        i = 0;
+    }
+    setTimeout(pictureSlide, slideShowSec);
 }
+
+
+window.onload = pictureSlide;

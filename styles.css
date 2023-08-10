@@ -52,10 +52,10 @@ a:hover {
 }
                               
 .navbar {
-    padding: 25px;
-    margin: 10px;
+    padding: 50px 60px;
+    margin: 20px;
     margin: 0;
-    letter-spacing: 5px;
+    letter-spacing: 12px;
 }
 
 .navbar ul {
@@ -80,28 +80,36 @@ a:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
-.missionStatement {
+#missionStatement {
     padding: 150px 100px;
     margin: 50px;
     background-image: url("Images/studentIMG.jpeg");
+    background-position: center;
     background-size: cover;
 }
 
-.missionStatement p, .missionStatement h1{
+#missionStatement p, #missionStatement h1{
     align-items: end;
-    color: #FEFCFD;
+    color: #ffffff;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 500;
     padding: 10px 20px;
 }
 
 
 #transportation, #financial-aid, #textbooks,#finances {
-    border: outset;
-    padding: 30px 50px;
-    margin: 50px;
+    border: 10px outset;
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
     background-color: #FEFCFD;
+    height: 300px;
+    width: 1600px;
+    
 }
 
 
@@ -110,38 +118,54 @@ a:hover {
     text-align: end;
     color: #000505;
     font-size: 30px;
-    margin: 10px 10px;
+    margin: 20px 50px;
 }
 
 #transportation
  p {
     text-align: start;
     color: #000505;
+    margin: 20px 40px;
 }
 
+#financial-aid h2 {
+    text-align: start;
+    color:#000505;
+    font-size: 30px;
+    margin: 20px 50px;
+}
+
+#financial-aid p {
+    text-align: end;
+    color: #000505;
+    margin: 20px 40px;
+}
 
 #textbooks h2 {
     text-align: end;
     color: #000505;
-    font-size: 30px
+    font-size: 30px;
+    margin: 20px 50px;
 }
 
 #textbooks p {
     text-align: start;
     color: #000505;
-    margin: 10px 10px
+    margin: 20px 40px;
 }
 
 #finances h2{
     text-align: start;
     color: #000505;
     font-size: 30px;
+    margin: 20px 50px;
 }
 
 #finances p {
     text-align: end;
     color: #000505;
-    margin: 20px 20px
+    margin: 20px 40px;
+
 }
 
 #financeCalc {
@@ -150,6 +174,8 @@ a:hover {
     border-style: outset;
     text-shadow: none;
     text-decoration: none;
+    margin: 20px 30px;
+    padding: 10px 5px;
 }
 
 #financeCalc:hover {
@@ -207,8 +233,13 @@ a:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
+#aboutToTop {
+    background-color: #000505;
+}
+
 #aboutToIndex {
     color: #FEFCFD;
+    justify-content: start;
 }
 
 #aboutToIndex:hover {
@@ -221,11 +252,15 @@ a:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
+
+
 #contact-form {
+    
     background-color: #FEFCFD;
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
+    padding: 10px 20px;
+    margin: 20px 20px;
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
@@ -242,6 +277,8 @@ a:hover {
 #savingsText {
     margin: 10px 20px;
 }
+
+
 
 .container {
     display: flex;
@@ -288,10 +325,18 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("Images/connect-student-success.jpg");
+    background-size: contain;
 }
 
 .calculator h3 {
     color:#5D5D81;
     font-weight: 800;
     margin-bottom: 20px;
+}
+
+.contactBody {
+    background-color: #000505;
+    background-image: url("Images/connect-student-success.jpg");
+    background-size: contain;
 }
