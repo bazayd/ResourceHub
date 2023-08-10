@@ -1,4 +1,4 @@
-let submitButton = document.getElementById('submit');
+// let submitButton = document.getElementById("submit");
 
 
 
@@ -23,29 +23,24 @@ function calculate() {
     savingsContent.innerHTML = "Savings: $" + savings.toLocaleString();
 }
 
-submitButton.addEventListener('click', calculate);
+// submitButton.addEventListener('click', calculate);
 
 // Contact Form
 
-let i = 0;
-let images = [];
-let slideShowSec = 3000;
+const factsTransport = ["In 2019, Americans took 9.9 billion trips on public transportation.", 
+"34 million times each weekday, people board public transportation.",
+ "Approximately 6,800 organizations provide public transportation in the United States.",
+"Every $1 billion invested in public transportation supports and creates approximately 50,000 jobs.",
+"Traveling by public transportation is 10 times safer per mile than traveling by automobile.",
+"A person can reduce his or her chance of being in an accident by more than 90% simply by taking public transit as opposed to commuting by car."
+];
 
-images[0] = 'Images/connect-student-success.jpg';
-images[1] = 'Images/studentjourney.webp';
-images[2] = 'Images/connect-student-success.jpg';
-
-function pictureSlide() {
-    document.getElementById("missionStatement").style.backgroundImage = "url(" + images[i] + ")";
-
-
-    if (i < images.length -1) {
-        i++
-    } else {
-        i = 0;
-    }
-    setTimeout(pictureSlide, slideShowSec);
+function randomGenerator(max) {
+    return Math.floor(Math.random() * max);
 }
 
+function changeFact() {
+    let randomNumber = randomGenerator(factsTransport.length);
 
-window.onload = pictureSlide;
+    document.getElementById('transporationFact').innerHTML = factsTransport[randomNumber];
+}
