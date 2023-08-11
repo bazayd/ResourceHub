@@ -23,16 +23,39 @@ function calculate() {
     savingsContent.innerHTML = "Savings: $" + savings.toLocaleString();
 }
 
+// Contact Form name function, capitalizes name
+
+function capitalizeName() {
+    const inputName = document.getElementById("name");
+    const splitName = inputName.value.split(" ");
+
+    console.log(splitName);
+
+    for (let i = 0; i < splitName.length; i++) {
+        splitName[i] = splitName[i][0].toUpperCase() + splitName[i].substr(1);
+    }
+
+    let capitalizedName = splitName.join(" ");
+
+  
+    console.log(capitalizedName);
+
+    inputName.value = capitalizedName;
+
+}
+
 // submitButton.addEventListener('click', calculate);
 
-// Contact Form
+// Facts Generator
 
 const factsTransport = ["In 2019, Americans took 9.9 billion trips on public transportation.", 
 "34 million times each weekday, people board public transportation.",
  "Approximately 6,800 organizations provide public transportation in the United States.",
 "Every $1 billion invested in public transportation supports and creates approximately 50,000 jobs.",
 "Traveling by public transportation is 10 times safer per mile than traveling by automobile.",
-"A person can reduce his or her chance of being in an accident by more than 90% simply by taking public transit as opposed to commuting by car."
+"A person can reduce his or her chance of being in an accident by more than 90% simply by taking public transit as opposed to commuting by car.",
+"Of all riders, 71% are employed and 7% are students.",
+"Communities that invest in public transit reduce the nation’s carbon emissions by 63 million metric tons annually."
 ];
 
 function randomGenerator(max) {
@@ -44,3 +67,4 @@ function changeFact() {
 
     document.getElementById('transporationFact').innerHTML = factsTransport[randomNumber];
 }
+

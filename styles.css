@@ -100,6 +100,7 @@ a:hover {
     -ms-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
+    
 }
 
 #missionStatement {
@@ -373,9 +374,38 @@ a:hover {
 }
 
 .transportationFacts {
+    display: block;
     float: right;
-    width: 300px;
-    
+    max-width: 400px;
+    max-height: 300px;
+    border-style: inset;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-right: 80px;
+    margin-top: 20px;
+
+}
+
+#fact1Button {
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    background-color: #BFCDE0;
+    outline: none;
+    padding: 10px 10px;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+#fact1Button:hover,
+#fact1Button :focus
+{
+    text-decoration: underline;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(-0.25em);
 }
 
 @media (max-width: 600px) {
