@@ -55,7 +55,9 @@ const factsTransport = ["In 2019, Americans took 9.9 billion trips on public tra
 "Traveling by public transportation is 10 times safer per mile than traveling by automobile.",
 "A person can reduce his or her chance of being in an accident by more than 90% simply by taking public transit as opposed to commuting by car.",
 "Of all riders, 71% are employed and 7% are students.",
-"Communities that invest in public transit reduce the nation’s carbon emissions by 63 million metric tons annually."
+"Communities that invest in public transit reduce the nation’s carbon emissions by 63 million metric tons annually.",
+"T​he average household spends 16 cents of every dollar on transportation, and 93% of this goes to buying, maintaining, and operating cars, the largest expenditure after housing.",
+"A household can save nearly $10,000 by taking public transportation and living with one less car."
 ];
 
 function randomGenerator(max) {
