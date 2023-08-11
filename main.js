@@ -1,16 +1,18 @@
 // let submitButton = document.getElementById("submit");
 
-
+// Calculates the user's monthly income using the 50/30/20 rule
+// 50 percent for necessities, 30 percent for wants, and 20 percent for savings
 
 function calculate() {
     let monthlySalary = parseInt(document.getElementById('monthly').value)
-    // console.log(typeof(monthlySalary))
-    // let monthylSalaryString = monthlySalary.toLocaleString();
+    
+    // After we receive the user's input on their monthly income and turn it into an integer, we then use the 50/30/20 rule
 
     let necessities = monthlySalary * 0.5;
     let wants = monthlySalary * 0.3;
     let savings = monthlySalary * 0.2;
 
+    // Changing the paragraph's inner HTML with the separate values
     let necessitiesContent = document.getElementById('necessitiesText');
     let wantsContent = document.getElementById('wantsText');
     let savingsContent = document.getElementById('savingsText');
@@ -23,23 +25,28 @@ function calculate() {
     savingsContent.innerHTML = "Savings: $" + savings.toLocaleString();
 }
 
-// Contact Form name function, capitalizes name
+// Contact Form name function, capitalizes first letter of each name
 
 function capitalizeName() {
+    // First we get the user's input and then with that value we split it with each space there is
     const inputName = document.getElementById("name");
     const splitName = inputName.value.split(" ");
 
+    // testing name split
     console.log(splitName);
 
+    // iterates the split string and capitalizes the first character
     for (let i = 0; i < splitName.length; i++) {
         splitName[i] = splitName[i][0].toUpperCase() + splitName[i].substr(1);
     }
 
+    // joins back the split string
     let capitalizedName = splitName.join(" ");
 
   
     console.log(capitalizedName);
 
+    // new value is now the capitalized version of the user's names
     inputName.value = capitalizedName;
 
 }
@@ -48,6 +55,7 @@ function capitalizeName() {
 
 // Facts Generator
 
+// Array of transportation facts
 const factsTransport = ["In 2019, Americans took 9.9 billion trips on public transportation.", 
 "34 million times each weekday, people board public transportation.",
  "Approximately 6,800 organizations provide public transportation in the United States.",
@@ -60,13 +68,16 @@ const factsTransport = ["In 2019, Americans took 9.9 billion trips on public tra
 "A household can save nearly $10,000 by taking public transportation and living with one less car."
 ];
 
+// Generates a random number with the range based on the max parameter given
 function randomGenerator(max) {
     return Math.floor(Math.random() * max);
 }
 
+// random number is equal to a random number using the random generator function and the array's size
 function changeFact() {
     let randomNumber = randomGenerator(factsTransport.length);
 
+    // inner HTML of paragraph set to different fact by accessing a specific index with randomNumber
     document.getElementById('transporationFact').innerHTML = factsTransport[randomNumber];
 }
 

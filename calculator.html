@@ -10,6 +10,7 @@
         <title>50/30/20 Calculator</title>
     </head>
     <body>
+        <!-- Uses a Form to recieve user input, gets the monthly income of the User and calculates a budget-->
             <div id="calcTop">
                 <a href="index.html" id="backToIndex" ><i class="fa fa-arrow-circle-left" style="font-size:36px"></i></a>
             </div>
@@ -17,12 +18,14 @@
                 <h1 id="calculatorHeading">50/30/20 Calculator</h1>
             </header>
         <main>
+            <!-- User submits monthly income, 3 paragraph values change to specific dollar value-->
             <div class="calculator">
                 <h3>Find out how to budget using the 50/30/20 Rule</h2>
                 <div id="monthlySalary">
                     <form id="form" name="calcForm" action="" method="GET">
                         <label id="calcLabel" for="monthly">Enter Monthly after-tax salary</label><br>
                         <input type="text" id="monthly" name="monthly" value=""><br>
+                        <!-- Uses calculate() function from main.js file -->
                         <input type="submit" id="submit" name="calcSubmit" value="Submit" onclick="calculate(this.calcForm); return false;"><br>
                         <p id="necessitiesText" >Necessities : $0</p>
                         <p id="wantsText">Wants: $0</p>
